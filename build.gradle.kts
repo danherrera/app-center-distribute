@@ -14,6 +14,15 @@ repositories {
     google()
 }
 
+gradlePlugin {
+    plugins {
+        register("appCenterDistribute") {
+            id = "com.github.danherrera.appcenterdistribute"
+            implementationClass = "com.github.danherrera.appcenterdistribute.AppCenterDistributePlugin"
+        }
+    }
+}
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     compileOnly(gradleApi())
