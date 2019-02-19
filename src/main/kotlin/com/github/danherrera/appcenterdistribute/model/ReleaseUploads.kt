@@ -1,4 +1,4 @@
-package io.github.danherrera.appcenterdistribute.model
+package com.github.danherrera.appcenterdistribute.model
 
 data class ReleaseUploads(
     val upload_id: String,

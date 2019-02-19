@@ -1,7 +1,7 @@
-package io.github.danherrera.appcenterdistribute
+package com.github.danherrera.appcenterdistribute
 
-import io.github.danherrera.appcenterdistribute.model.ReleaseInfo
-import io.github.danherrera.appcenterdistribute.model.ReleaseUploads
+import com.github.danherrera.appcenterdistribute.model.ReleaseInfo
+import com.github.danherrera.appcenterdistribute.model.ReleaseUploads
 import okhttp3.Headers
 import okhttp3.Interceptor
 import okhttp3.MediaType

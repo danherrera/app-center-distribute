@@ -1,4 +1,4 @@
-package io.github.danherrera.appcenterdistribute.model
+package com.github.danherrera.appcenterdistribute.model
 
 data class ReleaseInfo(
     val release_id: String,

@@ -1,4 +1,4 @@
-package io.github.danherrera.appcenterdistribute
+package com.github.danherrera.appcenterdistribute
 
 import org.gradle.api.Project
 

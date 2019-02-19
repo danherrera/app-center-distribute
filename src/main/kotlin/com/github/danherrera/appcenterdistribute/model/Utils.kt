@@ -1,4 +1,4 @@
-package io.github.danherrera.appcenterdistribute.model
+package com.github.danherrera.appcenterdistribute.model
 
 internal fun String.getStringValue(key: String): String {
     return this.substringAfter(key)
