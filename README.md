@@ -53,9 +53,11 @@ appCenterDistribute {
 
 ### Tasks
 
-Once configured properly and synchronizing Gradle with project files, a new set of gradle tasks will be available within the `AppCenter` group. 
+Once configured properly and synchronizing Gradle with project files, a new set of gradle tasks will be available within the `AppCenter` group. These include one task per variant (`distribute{variantName}ToAppCenter`) and a task for all variants `distributeAllToAppCenter`. Example partial output of `./gradlew tasks`:
 
 ```
+...
+
 AppCenter tasks
 ---------------
 distributeAllToAppCenter - Distribute all variants to App Center
@@ -67,6 +69,8 @@ distributeAmazonFreeDebugToAppCenter - Distribute amazonFreeDebug to App Center
 distributeAmazonFreeReleaseToAppCenter - Distribute amazonFreeRelease to App Center
 distributeAmazonPaidDebugToAppCenter - Distribute amazonPaidDebug to App Center
 distributeAmazonPaidReleaseToAppCenter - Distribute amazonPaidRelease to App Center
+
+...
 ```
 
 Note that these tasks will be created for all variants in the app module, regardless of whether they were defined in the `variantToAppName` map. Running a task for a variant whose App Center app name was not supplied in the `variantToAppName` map will result in a failure. However, when running the `distributeAllToAppCenter` task, failure of one variant will not impede execution of consequent variants.
